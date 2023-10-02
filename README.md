@@ -27,3 +27,17 @@ introduccion a las consultas a una BD usando el lenguaje SQL
 
 3. si desea obtener los registros cuya identificacion sea mayor o igual a 150, se debe utilizar la clausula `WHERE` que especifi las condiciones que deben reunir los registros que se van a seleccionar: `SELECT * FROM Cliente WHERE identificacion>=150'
 ![Consulta3](Consulta3.png " consulta 3")
+
+### Consulta No.4
+
+4. se desea obtener los registros cuyos apellidos sean Vanegas o Celina, se debe utilizar el operador `IN` Que especifica los registros de una tabla. 
+
+`SELECT apellidos FROM cliente WHERE apellidos IN('vanegas', 'celina')`
+
+![Consulta4](Consulta4.png " consulta 4")
+
+O se puede utilizar el operador `OR`
+
+`SELECT apellidos FROM cliente WHERE apellidos ='vanegas'OR apellidos = 'celina'`
+
+![Consulta4 1](Consulta4_1.png " consulta 4 1")
