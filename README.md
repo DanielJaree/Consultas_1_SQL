@@ -103,3 +103,25 @@ O se puede utilizar el operador `OR`
 ## Instruccion UPDATE
 - Actualizar un campo de la tabla
 - El formato es: `UPDATE nombre_tabla SET nombre_campo = valor`
+
+### Actualizacion No. 1
+
+1. Para actualizar la ciu_nacu de Cristian Vanegas, cuya id es 114
+
+`UPDATE Cliente SET ciudad_nac = 'Pereira' WHERE identificacion = 114`
+
+## Creacion tabla Pedido
+### diccionario de datos
+Campo  Tipo de Dato  Longitud
+
+No_pedido Varchar 15
+iden_cliente varchar 15
+Fecha_compra varchar 20
+Fecha_vencimiento varchar 25
+Observacion varchar 30
+
+![Relacion](Relacion.png "Relacion")
+
+### Tabla pedido
+
+![Tabla nueva](Tablapedido.png "New table")
