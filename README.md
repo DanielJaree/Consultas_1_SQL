@@ -92,6 +92,14 @@ O se puede utilizar el operador `OR`
 
 1. Eliminar los registros cuya identificacion sea mayor de 170
 
-`DELETE FROM Cliente WHERE Identificacion >= 170`
+`DELETE FROM Cliente WHERE Identificacion = 170`
 
-![Eliminacion 1](Eliminacion.png "Eliminacion 1")
+![Eliminacion 1](Eliminacion1.png "Eliminacion 1")
+
+![Eliminacion 2](Eliminacion2.png "Eliminacion 2")
+
+2. Eliminar los registros cuya id sea igual a 116
+
+## Instruccion UPDATE
+- Actualizar un campo de la tabla
+- El formato es: `UPDATE nombre_tabla SET nombre_campo = valor`
