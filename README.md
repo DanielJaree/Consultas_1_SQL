@@ -83,3 +83,15 @@ O se puede utilizar el operador `OR`
 `SELECT * FROM Cliente WHERE identificion BETWEEN 110 AND 150`
 
 ![Consulta9 1](Consulta9.png " consulta 9 1")
+
+## Intrusccion DELETE
+- Permite seleccionar datos de una tabla.
+-Su formato es: `DELETE FROM nombre_tabla`
+
+### Eliminacion No. 1
+
+1. Eliminar los registros cuya identificacion sea mayor de 170
+
+`DELETE FROM Cliente WHERE Identificacion >= 170`
+
+![Eliminacion 1](Eliminacion.png "Eliminacion 1")
