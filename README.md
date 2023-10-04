@@ -141,3 +141,9 @@ Observacion varchar 30
 `SELECT Cliente.identificacion, Cliente.nombre, Cliente.apellidos, Pedido.no_pedido, Pedido.fecha_compra, Pedido.fecha_vencimiento, pedido.observacion FROM Cliente INNER JOIN Pedido ON Cliente.identificacion= Pedido.iden_cliente`
 
 ![INNER](inner.png "JOIN")
+
+2. Para visualizar todos los campos de las tablas Cliente y Pedido donde identificacion sea mayor que 100, se debe utilizar la 1ra funcion 
+`SELECT Cliente.*, Pedido.* FROM Cliente INNER JOIN Pedido ON Cliente.identificacion = Pedido.iden_cliente WHERE Cliente.identificacion
+100` 
+![INNER2](inner2.png "JOIN2")
+
