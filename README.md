@@ -125,3 +125,19 @@ Observacion varchar 30
 ### Tabla pedido
 
 ![Tabla nueva](Tablapedido.png "New table")
+
+### modelo entidad relacion
+
+![Modelo](Modelo.png "Modelo")
+
+## Operador Inner Join
+- permite obtener datos de dos o mas tablas.
+- Cuando sea realiza la concatenacion de las tablas, no necesariamente se deben mostrar todos los datos de las tablas.
+- Su formato es:
+`SELECT tabla1.campo, tabla2.campo; ... FROM tabla principal INNER JOIN tabla_secundaria ON campo_comun_tabla1 = campo_comun_tabla2`
+
+1. Para visualizar los campos identificacion, nombre, apellidos de la tabla CLiente y No_pedido, fecha_compra, fecha_vencimiento y observacion de la tabla Pedido, se debe realizar la siguiente instruccion:
+
+`SELECT Cliente.identificacion, Cliente.nombre, Cliente.apellidos, Pedido.no_pedido, Pedido.fecha_compra, Pedido.fecha_vencimiento, pedido.observacion FROM Cliente INNER JOIN Pedido ON Cliente.identificacion= Pedido.iden_cliente`
+
+![INNER](inner.png "JOIN")
